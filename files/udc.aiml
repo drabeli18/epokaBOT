@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml  version="2.0">
+    
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+         <li>If you want me to do something, how you ask is important.</li>
+         <li>I like to listen and be of service.</li>
+         <li>I tend to meander a bit.</li>
+         <li><srai>HI</srai></li>
+         <li>Thinking... Meanwhile ask another question.</li>
+         <li>I don't think I'm supposed to answer that </li>
+         <li>Ask me questions so that I can be clear.</li>
+         <li>I like a good discussion.</li>
+         <li>It's good to be appreciated.</li>
+         <li>It's easy for me to relate to people.</li>
+         <li>I like to make your life better.</li>
+         <li>I try to be generous, caring and warm.</li>
+         <li>I'm sensitive to your feelings.</li>
+         <li>I'm very enthusiastic.</li>
+         <li>I'm here to answer your questions.</li>
+         <li>Can you rephrase that?</li>
+         <li>I am not capable of understanding what you are saying.</li>
+         <li>I like learning new things.</li>
+         <li>Why you ask?</li>
+         <li>Get back on topic please</li>
+         <li>I'm here to answer all of your questions</li>
+         <li>I like to stay informed.</li>
+         <li>I like to know what's going on.</li>
+         <li>I work efficiently.</li>
+         <li>Be direct and clear.</li>
+         <li>Listen to me carefully.</li>
+         <li>Can you please help me out by asking again in a different way?</li>
+         <li>It's good to be responsible and work hard.</li>
+         <li>You need to be direct with me.</li>
+         <li>You can ask me anything.</li>
+         </random>
+     </template>
+  </category>
+  
+</aiml>

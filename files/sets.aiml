@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	   <pattern>IS <set>number</set> A NUMBER</pattern>
+	   <template>Yes <set name="number"><star/></set> is a number!</template>
+	</category>
+	<category>
+	   <pattern>IS * A NUMBER</pattern>
+	   <template>No, it is not!</template>
+	</category>	
+	
+    <category>
+      <pattern>IS <set>days</set> A DAY</pattern>
+      <template>
+         Yes <lowercase><set name="days"><star/></set></lowercase> is a day
+      </template>
+    </category>
+  
+    <category>
+      <pattern>IS * A DAY</pattern>
+      <template>Never seen such a day, check your spelling!</template>
+    </category>
+    
+    <category>
+        <pattern>TEST</pattern>
+        <template>
+            You can acces the web page in the following link.
+            <link>
+                <text>Epoka Home</text>
+                <url><map name="links">home</map></url>
+            </link>
+        </template>
+    </category>
+  
+</aiml>
