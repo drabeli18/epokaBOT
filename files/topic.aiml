@@ -20,7 +20,7 @@
   <category>
       <pattern>MY NAME IS *</pattern>
       <template>Hello 
-      <set name="firstname"> <star/> </set> 
+      <formal><set name="firstname"> <star/> </set></formal> 
       <condition name="firstname">
           <li value="Denado">That is the name of my creator too!</li>
           <li value="No">It's okay you can keep it secret</li>
@@ -29,16 +29,23 @@
   </category>
   
   <category>
+      <pattern>WHAT ARE YOU</pattern>
+      <template>I am a conversation agent or to put it simply, a chatbot.</template>
+  </category>
+  
+  <category>
       <pattern>WHAT CAN YOU DO</pattern>
-      <template>I am capable of asking the most frequently asked question about Epoka University</template>
+      <template>
+          I am capable of asking the most frequently asked question about Epoka University.
+      </template>
   </category>
   
   <category>
       <pattern>WHAT IS MY NAME</pattern>
       <template>
-            <condition>
+            <condition name="firstname">
                 <li value = "unknown">You have not told me your name</li>
-                <li>Your name is <formal><get name="firstname"/></formal> </li> 
+                <li>Your name is <formal><get name="firstname"/></formal></li> 
             </condition>
       </template>
   </category>
@@ -128,7 +135,7 @@
             Okay, thanks for telling me.
             <learn>
                 <category>
-                    <pattern>WHAT IS A<eval><star/></eval></pattern>
+                    <pattern>WHAT IS <eval><star/></eval></pattern>
                     <template>
                         I think it is <eval><star index="2"/></eval>
                     </template>
