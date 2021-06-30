@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	
+	<category>
+	    <pattern>^ DOCUMENT ^ ALBANIAN</pattern>
+	    <template>
+	        All the documents you can acquire in the Registrar Office are listed
+	        in the EIS system. For more specific request please contact the Registrar
+	        Office directly.
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ FREEZE ^ STUDIES ^</pattern>
+        <template>In the event that a leave of absence is needed, the student shall apply to the 
+        Registrar’s Office by completing the relevant form within twenty days at the latest following 
+        the occurrence of such reason and proves it by documentary evidence. The continuity of the said reasons 
+        is grounds for the extension of the leave of absence by the relevant Decanate. <br></br>
+        For further information check the student guide in the following link: 
+        <link>
+            <text> Student Guide</text>
+            <url><map name="links">guide</map></url>
+        </link>
+        <br></br>
+        Or contact the Registrars Office directly.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ FREEZE ^ REGISTRATION ^</pattern>
+        <template><srai>^ FREEZE ^ STUDIES ^</srai></template>
+    </category>
+    
 </aiml>

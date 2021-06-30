@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>^ INTERNAL TRANSFER ^</pattern>
+	    <template>
+	        Students who have completed at least one semester in their programs may apply to the Registrar’s 
+	        Office during the period specified in the academic calendar for transferring to another program within 
+	        the University. <br> </br>
+	        Applications are finalized by the proposal of the department 
+	        to which the student wishes to transfer to and the decision of the relevant Decanate
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ INTERNAL TRANSFER ^ DIFFERENT DEPARTMENT ^</pattern>
+        <template>
+            Yes such a transfer is possible, but not a good choice.<br></br>
+            The courses in programs of different departments differ so you should 
+            be careful with your choice.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SCHOLARSHIP OPPORTUNITIES ^</pattern>
+        <template>
+            Epoka University offers Academic Achievements scholarships, Sport scholarships 
+            and Social scholarships each with a certain quota of students. <br></br>
+            For more detailed information on scholarships contact the Admission Office.
+        </template>
+    </category>
+    
 </aiml>

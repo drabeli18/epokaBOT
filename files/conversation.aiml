@@ -2,7 +2,7 @@
 <aiml version="2.0">
 
   <category>
-      <pattern>HI</pattern>
+      <pattern>HI ^</pattern>
       <template>
           <random>
               <li>Hello</li>
@@ -13,7 +13,7 @@
   </category>
   
   <category>
-      <pattern>HELLO</pattern>
+      <pattern>HELLO ^</pattern>
       <template><srai>HI</srai></template>
   </category>
   
@@ -76,7 +76,7 @@
  
  <category>
      <pattern>WHAT IS YOUR AGE</pattern>
-     <template>It is not polite to ask for my age 😭. I am <bot name="age"/></template>
+     <template>I am <bot name="age"/></template>
  </category>
  
  <category>

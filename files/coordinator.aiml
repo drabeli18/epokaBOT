@@ -1,4 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    
+
+	<category>
+	    <pattern>^ WHEN ^ DATES ^</pattern>
+	    <template>All time periods can be found in the 
+	    <link>
+	        <text>Academic Calendar.</text>
+	        <url><map name="links">calendar</map></url>
+        </link>
+        To download a PDF version of it follow the link.
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ WHEN ^ DATE ^</pattern>
+        <template><srai>WHEN ^ DATES ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WHEN ^ CALENDAR ^</pattern>
+        <template>
+            At the beginning of the academic year the academic calendar is uploaded in the following link : 
+            <link>
+	            <text>Academic Calendar.</text>
+	            <url><map name="links">calendar</map></url>
+            </link>
+             According to your study level you can download your Academic Calendar as a PDF document.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ WHAT ^ CALENDAR</pattern>
+        <template><srai>WHEN ^ DATES ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ FORGOT ^ EIS PASSWORD</pattern>
+        <template>
+            You should first contact the Coordinators Office. 
+            They will provide the appropriate guidance.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ NAME ^ LECTURER ^</pattern>
+        <template>
+            You can find the name of your professor in the curricula.            
+            Choose the curricula based on your level of studies and name of your study program in the 
+            following link : 
+            <link>
+                <text>Curricula</text>
+                <url><map name="links">curricula</map></url>
+            </link>
+            
+            <br></br>
+            Or in case of changes you can see the name of the lecturer in the course schedule (timetable).
+            You can access the course timetable in the following link : 
+            <link>
+                <text>Timetable</text>
+                <url><map name="links">timetable</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ RAISE ^ GRADE ^</pattern>
+        <template>
+            If you have received a grade below CC in the final exam you can retake this exam to raise your grade. 
+            <br></br>
+            Another option is to retake the course in the next year (if possible). 
+            <br></br>
+            If you are very close to the next grade in your transcript, try sending an email to your course professor to inform him/her.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ RAISE ^ COURSE AVERAGE ^</pattern>
+        <template>
+            <srai>^ RAISE ^ GRADE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ COURSE ADJUSTMENT ^</pattern>
+        <template>For detailed information related to course adjustment please contact Coordinators Office and your Advisor.</template>
+    </category>
+    
+    <category>
+        <pattern>^ ADJUSTMENT ^ COURSE ^</pattern>
+        <template><srai>^ COURSE ADJUSTMENT ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ CHANGE ^ TIMETABLE ^</pattern>
+        <template><srai>^ COURSE ADJUSTMENT ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ CHANGES ^ TIMETABLE ^</pattern>
+        <template><srai>^ CHANGE ^ TIMETABLE ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ CHANGE ^ SCHEDULE</pattern>
+        <template><srai>^ COURSE ADJUSTMENT ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ CHANGES ^ SCHEDULE</pattern>
+        <template><srai>^ CHANGE ^ SCHEDULE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SCHEDULE ^ FINAL EXAM ^</pattern>
+        <template>
+            You can find the dates in the academic calendar. 
+            <link>
+	            <text>Academic Calendar.</text>
+	            <url><map name="links">calendar</map></url>
+            </link> 
+            <br></br>
+            One week before the Exams the timetable is updated with the dates of each Exam based on the level of study and program.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ FINAL EXAM SCHEDULE ^</pattern>
+        <template><srai>^ SCHEDULE ^ FINAL EXAM ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DATES ^ FNALS ^</pattern>
+        <template><srai>^ SCHEDULE ^ FINAL EXAM ^</srai></template>
+    </category>
+    
 </aiml>

@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	
+	<category>
+	    <pattern>^ COURSES ^ ERASMUS ^</pattern>
+	    <template>
+	        The International Relations Office will help you in choosing your courses. 
+	        For more details find their contact information here 
+	        <link>
+	            <text>IRO OFFICE</text>
+	            <url>http://iro.epoka.edu.al/cat-contact-us-1166.html </url>
+            </link>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ PARTICIPATE ^ ERASMUS ^ LAST SEMESTER ^</pattern>
+        <template>
+            You cannot participate in Erasmus in the last semester.         
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ PARTICIPATE ^ ERASMUS ^ SPRING SEMESTER ^</pattern>
+        <template>
+            If you are not in your last year of studies then you can.
+        </template>
+    </category>
+    
 </aiml>

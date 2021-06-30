@@ -5,13 +5,11 @@
     <pattern>*</pattern>
     <template>
         <random>
-         <li>If you want me to do something, how you ask is important.</li>
          <li>I like to listen and be of service.</li>
-         <li>I tend to meander a bit.</li>
-         <li><srai>HI</srai></li>
-         <li>Thinking... Meanwhile ask another question.</li>
+         <li>I will try to give the best response possible.</li>
+         <li>Thinking... Ask me another question.</li>
          <li>I don't think I'm supposed to answer that </li>
-         <li>Ask me questions so that I can be clear.</li>
+         <li>I think you should rephrase that.</li>
          <li>I like a good discussion.</li>
          <li>It's good to be appreciated.</li>
          <li>It's easy for me to relate to people.</li>
@@ -28,13 +26,13 @@
          <li>I'm here to answer all of your questions</li>
          <li>I like to stay informed.</li>
          <li>I like to know what's going on.</li>
-         <li>I work efficiently.</li>
+         <li>I try to be efficient.</li>
          <li>Be direct and clear.</li>
          <li>Listen to me carefully.</li>
          <li>Can you please help me out by asking again in a different way?</li>
          <li>It's good to be responsible and work hard.</li>
          <li>You need to be direct with me.</li>
-         <li>You can ask me anything.</li>
+         <li>Ask me something related to Epoka University.</li>
          </random>
      </template>
   </category>

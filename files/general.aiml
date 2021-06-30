@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+	    <pattern>^ FIND ^ CLASSROOM ^</pattern>
+	    <template>
+	    The first letter shows the building. <br></br>
+	    The first number shows the floor in which it is located, <br></br>
+	    and the rest of the numbers show the classroom.
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>WHERE ^ CLASS ^</pattern>
+        <template><srai>^ FIND ^ CLASSROOM</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ LANGUAGE ^ COURSE ^</pattern>
+        <template>
+            The courses can only be taken in the language specified in the curricula.
+            <link>
+                <text>Curricula</text>
+                <url><map name="links">curricula</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ COURSE LANGUAGE ^</pattern>
+        <template><srai>^ LANGUAGE ^ COURSE ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ GRADUATION CRITERIA ^</pattern>
+        <template>
+            Students who have: <br></br>
+            • been successful in all courses through pursuing the academic program <br></br>
+            • a CGPA of at least 2.00 <br></br>
+            • no FD or FF grade <br></br>
+            are deemed to have met the requirements of graduation by the relevant board decision 
+            and be awarded a diploma stating the name of the program and faculty.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ GRADUATE ^</pattern>
+        <template><srai>^ GRADUATION CRITERIA ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ OPEN ^ COURSE ^ SUMMER SCHOOL ^</pattern>
+        <template>You need to make a request to the board and there need to be at least 7 students that will participate.</template>
+    </category>
+    
+    <category>
+        <pattern>^ COURSES ^ SUMMER SCHOOL ^</pattern>
+        <template><srai>^ OPEN ^ COURSE ^ SUMMER SCHOOL ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SUMMER SCHOOL ^ COURSES ^</pattern>
+        <template><srai>^ OPEN ^ COURSE ^ SUMMER SCHOOL ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ PHONE ^</pattern>
+        <template>
+            Phone (pbx) : 	+355 4 2232 086 <br></br>
+            Fax : 	+355 4 2222 117
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ ADDRESS ^</pattern>
+        <template>Address : <br></br>
+        Rr. Tiranë-Rinas, Km. 12 <br></br>
+        1032 Vorë <br></br>
+        Tirana, Albania 
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHERE ^ LOCATED</pattern>
+        <template><srai>^ ADDRESS ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHERE ^ LOCATION</pattern>
+        <template>
+            <srai>^ ADDRESS ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ EMAIL ADDRESS ^</pattern>
+        <template>
+            For general information contact info@epoka.edu.al <br></br>
+            Human Relations : hr@epoka.edu.al <br></br>
+            Admission Office : admissions@epoka.edu.al <br></br>
+            Epoka Clubs : epokaclubs@epoka.edu.al <br></br>
+            Career Planning and Alumni Office : career@epoka.edu.al <br></br>
+            Dean Of Students : dos@epoka.edu.al <br></br>
+            Registrar's Office : registrar@epoka.edu.al <br></br>
+            Finance Office : finance@epoka.edu.al <br></br>
+            International Relation Office (IRO) : iro@epoka.edu.al <br></br>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ MAIL ^</pattern>
+        <template><srai>^ EMAIL ADDRESS ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ EAT ^</pattern>
+        <template>
+            Bereqet Catering offers dining services in the ground floor of Building A.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHERE ^ DINE</pattern>
+        <template><srai>^ EAT ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ TIME ^ LECTURE ^</pattern>
+        <template>
+            To check the timetable follow this link: <br></br>
+        <link>
+            <text>Timetable</text>
+            <url><map name="links">timetable</map></url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ TIME ^ COURSE ^</pattern>
+        <template><srai>^ TIME ^ LECTURE ^</srai></template>
+    </category>
+    
+</aiml>

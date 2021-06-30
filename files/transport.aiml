@@ -1,4 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+
+	 <category>
+        <pattern>TRANSPORT OFFICE</pattern>
+        <template>
+            For further information contact the transport office.
+            <link>
+                <text>Contact</text>
+                <url><map name="links">contact</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ CONTACT ^</pattern>
+        <template>
+            You can find contact information in the following link:
+            <link>
+                <text>Contact</text>
+                <url><map name="links">contact</map></url>
+            </link>
+        </template>
+    </category>
+    
+	<category>
+	    <pattern>LOST CARD</pattern>
+	    <template>
+	        If you have lost your University Card contact Transport Office at the 
+	        entrance of the campus.
+	        <br></br>
+	        Otherwise <srai>^ CONTACT ^</srai>
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>^ LOST ^ CARD</pattern>
+	    <template>
+	       <srai>LOST CARD</srai>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ TRANSPORT TIMETABLE ^</pattern>
+        <template>
+            You can access the transport timetable and all information 
+            related to transport in the following link:
+            <link>
+                <text>Transport Timetable</text>
+                <url><map name="links">timetable</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ BUS ^</pattern>
+        <template><srai>^ TRANSPORT TIMETABLE ^</srai></template>
+    </category>
+    
 </aiml>
