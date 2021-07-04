@@ -36,7 +36,7 @@
   <category>
       <pattern>WHAT CAN YOU DO</pattern>
       <template>
-          I am capable of asking the most frequently asked question about Epoka University.
+          I am capable of anwering all your questions about Epoka University.
       </template>
   </category>
   
@@ -53,7 +53,7 @@
  <category>
      <pattern>ASK ME A QUESTION</pattern>
      <template>
-         Do you like the beach?
+         Do you like Epoka University?
      </template>
  </category>
  
@@ -66,7 +66,15 @@
  <category>         
      <that>DO YOU LIKE *</that>
      <pattern>NO</pattern>
-     <template>That is a shame!</template>
+     <template>
+         That is a shame! Can you tell us more so we can improve?
+     </template>
+ </category>
+ 
+ <category>
+     <that>CAN YOU TELL US MORE SO WE CAN IMPROVE</that>
+     <pattern>*</pattern>
+     <template>Thank you for telling us!</template>
  </category>
  
  <category>

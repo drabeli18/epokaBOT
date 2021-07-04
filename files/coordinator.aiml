@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     
-    
-
+    <!--Where are dates announced, or when -->
 	<category>
 	    <pattern>^ WHEN ^ DATES ^</pattern>
 	    <template>All time periods can be found in the 
@@ -14,9 +13,16 @@
 	    </template>
     </category>
     
+     <category>
+        <pattern>^ WHERE ^ CALENDAR ^</pattern>
+        <template>
+            <srai>^ WHEN ^ DATES ^</srai>
+        </template>
+    </category>
+    
     <category>
         <pattern>^ WHEN ^ DATE ^</pattern>
-        <template><srai>WHEN ^ DATES ^</srai></template>
+        <template><srai>^ WHEN ^ DATES ^</srai></template>
     </category>
     
     <category>
@@ -36,14 +42,23 @@
         <template><srai>WHEN ^ DATES ^</srai></template>
     </category>
     
+    <!--Forgot Password -->
     <category>
-        <pattern>^ FORGOT ^ EIS PASSWORD</pattern>
+        <pattern>^ FORGOT ^ EIS PASSWORD ^</pattern>
         <template>
-            You should first contact the Coordinators Office. 
+            You should first contact the Coordinators Office. <br></br>
             They will provide the appropriate guidance.
         </template>
     </category>
     
+    <category>
+        <pattern>^ PASSWORD ^</pattern>
+        <template>
+            <srai>^ FORGOT ^ EIS PASSWORD</srai>
+        </template>
+    </category>
+    
+    <!--Check lecturer name-->
     <category>
         <pattern>^ NAME ^ LECTURER ^</pattern>
         <template>
@@ -65,6 +80,7 @@
         </template>
     </category>
     
+    <!--How do I raise my grade -->
     <category>
         <pattern>^ RAISE ^ GRADE ^</pattern>
         <template>
@@ -83,6 +99,7 @@
         </template>
     </category>
     
+    <!--I want to change my schedule -->
     <category>
         <pattern>^ COURSE ADJUSTMENT ^</pattern>
         <template>For detailed information related to course adjustment please contact Coordinators Office and your Advisor.</template>
@@ -113,6 +130,7 @@
         <template><srai>^ CHANGE ^ SCHEDULE</srai></template>
     </category>
     
+    <!--When are the finals-->
     <category>
         <pattern>^ SCHEDULE ^ FINAL EXAM ^</pattern>
         <template>
@@ -134,6 +152,25 @@
     <category>
         <pattern>^ DATES ^ FNALS ^</pattern>
         <template><srai>^ SCHEDULE ^ FINAL EXAM ^</srai></template>
+    </category>
+    
+    <!--Course Schedule -->
+    <category>
+        <pattern>WHERE ^ COURSE SCHEDULE ^</pattern>
+        <template>
+            You can view the course schedule in the following link by selecting your program, year and/or group:            
+            <link>
+                <text>Course Timetable</text>
+                <url><map name="links">timetable</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHERE ^ COURSE ^ TIMETABLE</pattern>
+        <template>
+            <srai>WHERE ^ COURSE SCHEDULE ^</srai>
+        </template>
     </category>
     
 </aiml>

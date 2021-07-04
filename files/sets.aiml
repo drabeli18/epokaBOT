@@ -5,6 +5,7 @@
 	   <pattern>IS <set>number</set> A NUMBER</pattern>
 	   <template>Yes <set name="number"><star/></set> is a number!</template>
 	</category>
+	
 	<category>
 	   <pattern>IS * A NUMBER</pattern>
 	   <template>No, it is not!</template>

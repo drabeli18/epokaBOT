@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
+    <!--Transport office-->
+
 	 <category>
         <pattern>TRANSPORT OFFICE</pattern>
         <template>
@@ -11,6 +13,8 @@
             </link>
         </template>
     </category>
+    
+    <!--How can I contact you -->
     
     <category>
         <pattern>^ CONTACT ^</pattern>
@@ -23,13 +27,19 @@
         </template>
     </category>
     
+    <!--What to do if I lost my card-->
+    
 	<category>
 	    <pattern>LOST CARD</pattern>
 	    <template>
 	        If you have lost your University Card contact Transport Office at the 
 	        entrance of the campus.
 	        <br></br>
-	        Otherwise <srai>^ CONTACT ^</srai>
+	        Otherwise access contact information in this link : 
+	        <link>
+                <text>Contact</text>
+                <url><map name="links">contact</map></url>
+            </link>
 	    </template>
     </category>
 	
@@ -40,6 +50,8 @@
 	    </template>
     </category>
     
+    <!--Where cain i access the transport timetable, cost, stations -->
+    
     <category>
         <pattern>^ TRANSPORT TIMETABLE ^</pattern>
         <template>
@@ -47,7 +59,7 @@
             related to transport in the following link:
             <link>
                 <text>Transport Timetable</text>
-                <url><map name="links">timetable</map></url>
+                <url><map name="links">busTimetable</map></url>
             </link>
         </template>
     </category>
@@ -55,6 +67,86 @@
     <category>
         <pattern>^ BUS ^</pattern>
         <template><srai>^ TRANSPORT TIMETABLE ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHERE ^ BUS ^ TIMETABLE ^</pattern>
+        <template><srai>^ TRANSPORT TIMETABLE ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ BUSES ^</pattern>
+        <template><srai>^ TRANSPORT TIMETABLE ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ BUS ^ COST ^</pattern>
+        <template> 
+        Tirana: <br></br>
+        One-Way Ticket fee:  100 Lekë <br></br>
+        Monthly subscription fee: 3,500 Lekë <br></br>
+        Durrës: <br></br>
+        Monthly subscription fee: 4,500 Lekë <br></br>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ WHERE ^ BUSES ^ DEPART ^</pattern>
+        <template>
+            Can you specify if it is f rom Durres or Tirana?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ BUS STATIONS ^</pattern>
+        <template><srai>^ WHERE ^ BUSES ^ DEPART ^</srai></template>
+    </category>
+    
+     <category>
+        <pattern>^ BUS STATION ^</pattern>
+        <template><srai>^ WHERE ^ BUSES ^ DEPART ^</srai></template>
+    </category>
+    
+    <category>
+        <that>FROM DURRES OR TIRANA</that>
+        <pattern>^ DURRES ^</pattern>
+        <template>
+            The BUSES depart from Ramazan Njala Sport Complex. <br></br>
+            For the time of departure see the
+            <link>
+                <text>Transport Timetable</text>
+                <url><map name="links">busTimetable</map></url>
+            </link>
+        </template>
+    </category>
+    
+     <category>
+        <that>FROM DURRES OR TIRANA</that>
+        <pattern>^ TIRANA ^</pattern>
+        <template>
+            The BUSES depart from :<br></br>
+            
+            Tirana Center (Behind the Opera Building)<br></br>
+            Zogu i Zi Bus Station<br></br>
+            Lapraka Bus Station<br></br>
+            Dogana Bus Station<br></br>
+            Epoka Campus
+            <br></br>
+            For the time of departure see the
+            <link>
+                <text>Transport Timetable</text>
+                <url><map name="links">busTimetable</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <that>FROM DURRES OR TIRANA</that>
+        <pattern>*</pattern>
+        <template>
+            I don't know about <star></star> <br></br>
+            Can you repeat the question from the beginning?
+        </template>
     </category>
     
 </aiml>
