@@ -57,7 +57,7 @@
     
     <category>
         <pattern>^ WHAT ^ CALENDAR</pattern>
-        <template><srai>WHEN ^ DATES ^</srai></template>
+        <template><srai>^ WHEN ^ DATES ^</srai></template>
     </category>
     
     <!--Forgot Password -->
@@ -72,7 +72,7 @@
     <category>
         <pattern>^ PASSWORD ^</pattern>
         <template>
-            <srai>^ FORGOT ^ EIS PASSWORD</srai>
+            <srai>^ FORGOT ^ EIS PASSWORD ^</srai>
         </template>
     </category>
     

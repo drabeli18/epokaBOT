@@ -12,7 +12,7 @@
     
     <category>
         <pattern>^ WHERE ^ CLASS ^</pattern>
-        <template><srai>^ FIND ^ CLASSROOM</srai></template>
+        <template><srai>^ FIND ^ CLASSROOM ^</srai></template>
     </category>
     
     <category>
