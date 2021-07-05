@@ -11,8 +11,13 @@
     </category>
     
     <category>
-        <pattern>WHERE ^ CLASS ^</pattern>
+        <pattern>^ WHERE ^ CLASS ^</pattern>
         <template><srai>^ FIND ^ CLASSROOM</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WHERE ^ CLASSROOM ^</pattern>
+        <template><srai>^ FIND ^ CLASSROOM ^</srai></template>
     </category>
     
     <category>
@@ -48,6 +53,7 @@
         <template><srai>^ GRADUATION CRITERIA ^</srai></template>
     </category>
     
+    <!--Summer School -->
     <category>
         <pattern>^ OPEN ^ COURSE ^ SUMMER SCHOOL ^</pattern>
         <template>You need to make a request to the board and there need to be at least 7 students that will participate.</template>
@@ -63,6 +69,7 @@
         <template><srai>^ OPEN ^ COURSE ^ SUMMER SCHOOL ^</srai></template>
     </category>
     
+    <!--Phone number-->
     <category>
         <pattern>^ PHONE ^</pattern>
         <template>
@@ -71,6 +78,7 @@
         </template>
     </category>
     
+    <!--Campus Location -->
     <category>
         <pattern>^ ADDRESS ^</pattern>
         <template>Address : <br></br>
@@ -81,17 +89,18 @@
     </category>
     
     <category>
-        <pattern>WHERE ^ LOCATED</pattern>
+        <pattern>WHERE ^ CAMPUS ^ LOCATED</pattern>
         <template><srai>^ ADDRESS ^</srai></template>
     </category>
     
     <category>
-        <pattern>WHERE ^ LOCATION</pattern>
+        <pattern>WHERE ^ LOCATION ^</pattern>
         <template>
             <srai>^ ADDRESS ^</srai>
         </template>
     </category>
     
+    <!-- Email Contact-->
     <category>
         <pattern>^ EMAIL ADDRESS ^</pattern>
         <template>
@@ -112,6 +121,7 @@
         <template><srai>^ EMAIL ADDRESS ^</srai></template>
     </category>
     
+    <!--Dining service -->
     <category>
         <pattern>^ EAT ^</pattern>
         <template>
@@ -124,6 +134,7 @@
         <template><srai>^ EAT ^</srai></template>
     </category>
     
+    <!--Course schedule accessing -->
     <category>
         <pattern>^ TIME ^ LECTURE ^</pattern>
         <template>

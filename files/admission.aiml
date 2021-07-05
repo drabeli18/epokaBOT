@@ -1,33 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+    <!-- registration -->
+    <category>
+        <pattern>^ ABROAD ^ APPLY ^ UNIVERSITY ^</pattern>
+        <template>
+            You can view information in this link:
+            <link>
+                <text>International Students</text>
+                <url><map name="links">admissionInternational</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ ADMISSION ^ CRITERIA ^</pattern>
+        <template>
+            You can view information in this link:
+            <link>
+                <text>Criterias</text>
+                <url><map name="links">admissionCriteria</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ CRITERIA ^ ADMISSION ^</pattern>
+        <template>
+            <srai>^ ADMISSION ^ CRITERIA ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>
+            ^ REGISTERED ^ E ^ ALBANIA ^ WHEN ^ SUBMIT ^ DOCUMENTS 
+        </pattern>
+        <template>
+            All deadlines are shown in the academic calendar
+            <link>
+                <text>Calendar</text>
+                <url><map name="links">calendar</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ TAKE ^ ENGLISH ^ TEST ^</pattern>
+        <template>
+            You will be informed by the Admission Office 
+            on the dates in which you can take the APTIS exam.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ TAKE ^ APTIS ^</pattern>
+        <template><srai>^ TAKE ^ ENGLISH ^ TEST ^</srai></template>
+    </category>
+    
+    
+	<!-- intra/inter transfers -->
 	<category>
-	    <pattern>^ INTERNAL TRANSFER ^</pattern>
+	    <pattern>^ TRANSFER ^</pattern>
+	    <template>
+	        What type of transfer did you want to make, an INTERNAL or EXTERNAL one?
+	    </template>
+    </category>
+	
+	<category>
+	    <that>DO YOU WANT TO MAKE AN INTERNAL OR EXTERNAL TRANSFER</that>
+	    <pattern>^ INTERNAL ^</pattern>
 	    <template>
 	        Students who have completed at least one semester in their programs may apply to the Registrar’s 
 	        Office during the period specified in the academic calendar for transferring to another program within 
 	        the University. <br> </br>
 	        Applications are finalized by the proposal of the department 
-	        to which the student wishes to transfer to and the decision of the relevant Decanate
+	        to which the student wishes to transfer to and the decision of the relevant Decanate.<br></br>
+	        The courses in programs of different departments differ so you should 
+            be careful with your choice.
 	    </template>
     </category>
     
     <category>
-        <pattern>^ INTERNAL TRANSFER ^ DIFFERENT DEPARTMENT ^</pattern>
+         <that>DO YOU WANT TO MAKE AN INTERNAL OR EXTERNAL TRANSFER</that>
+        <pattern>^ EXTERNAL ^</pattern>
         <template>
-            Yes such a transfer is possible, but not a good choice.<br></br>
-            The courses in programs of different departments differ so you should 
-            be careful with your choice.
+            Students who seek to transfer from another university to Epoka University may 
+            apply to the Registrar’s Office during the period specified in the academic calendar.<br></br>
+            Applications are finalized by the proposal of the department the student wants to transfer 
+            to and the decision of the relevant Decanate.
         </template>
     </category>
     
+    <!-- irregulars -->
+     <category>
+        <pattern>WHAT ^ IRREGULAR STUDENT ^</pattern>
+        <template>
+            A student who is unable to follow the subject sequence of objects outlined in the curricula.
+        </template>
+    </category>
+    
+    <!--Scholarships -->
     <category>
         <pattern>^ SCHOLARSHIP OPPORTUNITIES ^</pattern>
         <template>
             Epoka University offers Academic Achievements scholarships, Sport scholarships 
             and Social scholarships each with a certain quota of students. <br></br>
             For more detailed information on scholarships contact the Admission Office.
+            <link>
+                <text>Scholarship Information</text>
+                <url><map name="links">scholarship</map></url>
+            </link>
         </template>
     </category>
+    
+    <category>
+        <pattern>^ KEEP ^ SCHOLARSHIP ^</pattern>
+        <template>
+            The conditions which must not be breached are: <br></br>
+            a) complete the study program during the normal duration of studies;<br></br>
+            b) achieve high success and maintain a GPA above 2.00;<br></br>
+            c) attend at least 70% of the lessons; <br></br>
+            d) must not interrupt the studies for a definite time;<br></br>
+            e) participate actively in the University`s extracurricular activities;<br></br>
+            f) refrain from violating the student disciplinary regulation in act;<br></br>
+            g) refrain from making a horizontal transfer inside the University;<br></br>
+            h) represent the university with integrity and respect.<br></br>
+            For more information refer to the Admission Office
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ LOSE ^ SCHOLARSHIP</pattern>
+        <template><srai>^ KEEP ^ SCHOLARSHIP ^</srai></template>
+    </category>
+    
+    <!--General questions made to admission -->
+    <category>
+        <pattern>^ PROVIDE ^ TRANSPORT ^</pattern>
+        <template>
+            Yes, transport from Tirana and Durres is provided. <br></br>
+            For, more information check this link: 
+            <link>
+                <text>Transport</text>
+                <url><map name="links">busTimetable</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ ENGLISH CERTIFICATE ^</pattern>
+        <template>
+            You only need to show one English proficiency exam. 
+            This certification can be from APTIS, TOEFL, IELTS, CAMBRIDGE, TOEIC or GESE.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ CERTIFICATE ^ ENGLISH ^</pattern>
+        <template>
+            <srai>^ ENGLISH CERTIFICATE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ ALBANIAN PROFICIENCY ^</pattern>
+        <template></template>
+    </category>
+    
+    <!-- special students application -->
     
 </aiml>

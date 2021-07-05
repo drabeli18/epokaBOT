@@ -93,7 +93,7 @@
     <category>
         <pattern>^ WHERE ^ BUSES ^ DEPART ^</pattern>
         <template>
-            Can you specify if it is f rom Durres or Tirana?
+            Can you specify if it is from Durres or Tirana?
         </template>
     </category>
     
@@ -108,7 +108,7 @@
     </category>
     
     <category>
-        <that>FROM DURRES OR TIRANA</that>
+        <that>CAN YOU SPECIFY IF IT IS FROM DURRES OR TIRANA</that>
         <pattern>^ DURRES ^</pattern>
         <template>
             The BUSES depart from Ramazan Njala Sport Complex. <br></br>
@@ -121,7 +121,7 @@
     </category>
     
      <category>
-        <that>FROM DURRES OR TIRANA</that>
+        <that>CAN YOU SPECIFY IF IT IS FROM DURRES OR TIRANA</that>
         <pattern>^ TIRANA ^</pattern>
         <template>
             The BUSES depart from :<br></br>

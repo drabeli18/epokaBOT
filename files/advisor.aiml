@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     
-	<!-- insert your AIML categories here -->
+	<!-- courses -->
 	<category>
 	    <pattern>^ NOT ^ REGISTERED ^ COURSES ^</pattern>
 	    <template>
@@ -34,4 +34,85 @@
         </template>
     </category>
     
+    <category>
+        <pattern>^ COURSE REGISTRATION ^</pattern>
+        <template>
+            <srai>^ REGISTER ^ COURSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ WITHDRAW ^ COURSE ^</pattern>
+        <template>
+            Course withdrawal can be done by submitting a request in EIS, 
+            during the course withdrawal period (Add and Drop week). 
+            <br></br>
+            This period can be seen in the academic calendar.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ COURSE WITHDRAWAL ^</pattern>
+        <template>
+            <srai>^ WITHDRAW ^ COURSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ CAN NOT ^ REGISTER ^</pattern>
+        <template>
+            You lack approval from finance, advisor or you have not signed the contract. 
+            A special case is when you have frozen your studies.
+        </template>
+    </category>
+    
+    
+	<!-- honor/high honor list -->
+    <category>
+        <pattern>^ HONORS LIST ^</pattern>
+        <template>
+             At the end of each semester, students who have achieved all the courses 
+             of that semester and whose semester CGPA is between 3.00 - 3.49 are placed in the honors list, 
+             and students whose semester CGPA is between 3.50 - 4.00 are placed in the high honors list.<br></br>
+             For more information:
+            <link>
+                <text>Evaluation</text>
+                <url><map name="links">evaluation</map></url>
+            </link>
+        </template>
+    </category>
+    
+    <!--Course registraion delay -->
+    <category>
+        <pattern>^ PAID ^ NOT REGISTER ^ COURSE ^</pattern>
+        <template>
+            If you do not register your courses within the deadline 
+            specified in the academic 
+            calendar you pay a fine for each week of delay.<br></br>
+            These penalties are shown in your EIS account.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ PAID ^ NOT REGISTER ^ COURSES ^</pattern>
+        <template>
+            <srai>^ PAID ^ NOT REGISTER ^ COURSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ FINE ^ NOT ^ REGISTERING ^ COURSE ^</pattern>
+        <template>
+            <srai>^ PAID ^ NOT REGISTER ^ COURSE ^</srai>
+            <br></br>
+            Fine is 50€.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ FINE ^ NOT ^ REGISTERING ^ COURSES ^</pattern>
+        <template>
+            <srai>^ FINE ^ NOT ^ REGISTERING ^ COURSE ^</srai>
+        </template>
+    </category>
 </aiml>

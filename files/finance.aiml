@@ -1,4 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+    
+	<!--Payment approval -->
+	<category>
+	    <pattern>^ FINANCE ^ APPROVAL ^</pattern>
+	    <template>
+	        Finance approval is reflected in the system 1 or at most 2 business days after the payment is made.
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ APPROVAL ^ FROM FINANCE ^</pattern>
+        <template><srai>^ FINANCE ^ APPROVAL ^</srai></template>
+    </category>
+    
+     <category>
+        <pattern>^ FINANCE ^ APPROVE ^</pattern>
+        <template><srai>^ FINANCE ^ APPROVAL ^</srai></template>
+    </category>
+    
+    <!--How to pay-->
+    <category>
+        <pattern>^ PAYMENT ^ BANK ^</pattern>
+        <template>
+            You can make all payments in a bank or in the Finance Office directly. <br></br>
+            The bank account number of Epoka can be found in the EIS system or the following link
+            <link>
+                <text>Bank Accounts.</text>
+                <url><map name="links">bank</map></url>
+            </link><br></br>
+            After making the payment you need 
+            to show a proof in the Finance Office. 
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ PAY ^ BANK ^</pattern>
+        <template><srai>^ PAYMENT ^ BANK ^</srai></template>
+    </category>
+    
+    <!--Program Fees -->
+    <category>
+        <pattern>^ PROGRAM ^ FEES ^</pattern>
+        <template>
+            
+            You can access fees in the following links:<br></br>
+            
+            <link>
+                <text>Bachelor Fees</text>
+                <url><map name="links">bachelorFees</map></url>
+            </link>
+            <link>
+                <text>Master Fees</text>
+                <url><map name="links">masterFees</map></url>
+            </link>
+            
+            <link>
+                <text>PhD Fees</text>
+                <url><map name="links">phdFees</map></url>
+            </link>
+            
+            <link>
+                <text>Summer School Fees</text>
+                <url><map name="links">summerSchoolFees</map></url>
+            </link>
+            
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT ^ FEES ^ PROGRAM ^</pattern>
+        <template><srai>^ PROGRAM ^ FEES ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ PROGRAM ^ COST ^</pattern>
+        <template><srai>^ PROGRAM ^ FEES ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ TUITION ^ COST ^</pattern>
+        <template><srai>^ PROGRAM ^ FEES ^</srai></template>
+    </category>
+    
+    <!--Where are fines paid -->
+    <category>
+        <pattern>^ FINES ^ PAID ^</pattern>
+        <template>
+            You can pay fines in the Finance Office.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ PAY ^ FINE ^</pattern>
+        <template><srai>^ FINES ^ PAID ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ PENALITIES ^</pattern>
+        <template><srai>^ FINES ^ PAID ^</srai></template>
+    </category>
 </aiml>

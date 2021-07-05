@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     
+    <category>
+        <pattern>ACADEMIC CALENDAR</pattern>
+        <template>
+            Here -> 
+            <link>
+                <text>CALENDAR</text>
+                <url><map name="links">calendar</map></url>
+            </link>
+        </template>
+    </category>
+    
     <!--Where are dates announced, or when -->
 	<category>
 	    <pattern>^ WHEN ^ DATES ^</pattern>
@@ -11,6 +22,13 @@
         </link>
         To download a PDF version of it follow the link.
 	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ WHEN ^ WEEK ^</pattern>
+        <template>
+            <srai>^ WHEN ^ DATES ^</srai>
+        </template>
     </category>
     
      <category>
@@ -152,25 +170,6 @@
     <category>
         <pattern>^ DATES ^ FNALS ^</pattern>
         <template><srai>^ SCHEDULE ^ FINAL EXAM ^</srai></template>
-    </category>
-    
-    <!--Course Schedule -->
-    <category>
-        <pattern>WHERE ^ COURSE SCHEDULE ^</pattern>
-        <template>
-            You can view the course schedule in the following link by selecting your program, year and/or group:            
-            <link>
-                <text>Course Timetable</text>
-                <url><map name="links">timetable</map></url>
-            </link>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>WHERE ^ COURSE ^ TIMETABLE</pattern>
-        <template>
-            <srai>WHERE ^ COURSE SCHEDULE ^</srai>
-        </template>
     </category>
     
 </aiml>

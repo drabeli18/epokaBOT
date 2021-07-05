@@ -1,16 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
 	
+	<!-- Documents -->
 	<category>
-	    <pattern>^ DOCUMENT ^ ALBANIAN</pattern>
+	    <pattern>^ DOCUMENTS ^</pattern>
 	    <template>
 	        All the documents you can acquire in the Registrar Office are listed
-	        in the EIS system. For more specific request please contact the Registrar
+	        in the EIS system. <br></br>
+	        For more specific request please contact the Registrar
 	        Office directly.
 	    </template>
     </category>
     
+	<category>
+	    <pattern>^ DOCUMENT ^ ALBANIAN ^</pattern>
+	    <template>
+	        <srai>^ DOCUMENTS ^</srai>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ DIPLOMA ^ OBTAINED ^ SOMEONE ELSE ^</pattern>
+        <template>
+            The person must have your legal approval in order to obtain your diploma.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SOMEONE ELSE ^ OBTAIN ^ DIPLOMA ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ OBTAINED ^ SOMEONE ELSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SOMEONE ELSE ^ GET ^ DIPLOMA ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ OBTAINED ^ SOMEONE ELSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SOMEBODY ELSE ^ OBTAIN ^ DIPLOMA ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ OBTAINED ^ SOMEONE ELSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ SOMEBODY ELSE ^ GET ^ DIPLOMA ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ OBTAINED ^ SOMEONE ELSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DIPLOMA ^ OBTAINED ^ SOMEBODY ELSE ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ OBTAINED ^ SOMEONE ELSE ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ LOST ^ DIPLOMA ^</pattern>
+        <template>
+            You cannot get another original diploma but,
+            for more detailed information contact Registrar’s Office.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DIPLOMA ^ PREPARED ^</pattern>
+        <template>
+            All time periods are specified in the academic calendar.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ LONG ^ PREPARE ^ DIPLOMA ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ PREPARED ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ TIME ^ PREPARE ^ DIPLOMA ^</pattern>
+        <template>
+            <srai>^ DIPLOMA ^ PREPARED ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DO NOT ^ GET ^ DIPLOMA ^</pattern>
+        <template>
+            If you have not received your diploma then you can request it at the Registrar’s Office.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ GRADUATION STATUS ^</pattern>
+        <template>
+            Your graduation status is shown in your EIS system.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DID ^ GRADUATE ^</pattern>
+        <template>
+            <srai>^ GRADUATION STATUS ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DISCIPLINARY ^ DOCUMENT ^</pattern>
+        <template>
+            The disciplinary document contains all the contents of your penalties.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DOCUMENT ^ DISCIPLINE ^</pattern>
+        <template>
+            <srai>^ DISCIPLINARY ^ DOCUMENT ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DOCUMENT ^ SENT ^ POST ^</pattern>
+        <template>
+            Only in special cases. Please contact the Registrar’s Office for more information.
+        </template>
+    </category>
+    
+     <category>
+        <pattern>^ DOCUMENT ^ SENT ^ E ^ MAIL ^</pattern>
+        <template>
+            Only in special cases. Please contact the Registrar’s Office for more information.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DOCUMENT ^ SENT ^ EMAIL ^</pattern>
+        <template>
+            <srai>^ DOCUMENT ^ SENT ^ E ^ MAIL ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ GRADUATION RANK ^</pattern>
+        <template>
+            You get an extra document that has your graduation status in it. <br></br>
+            Depending on your average you can also get an extra Graduated With 
+            Honour or Graduated With High Honour in your diploma.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ EIS BLOCKED ^</pattern>
+        <template>
+            To unlock your EIS account contact the Registrar Office.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ EIS ^ BLOCKED ^ REQUEST ^</pattern>
+        <template>
+            If your EIS system is blocked you cannot make a request.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ REQUEST ^ EIS ^ BLOCKED ^</pattern>
+        <template>
+            <srai>^ EIS ^ BLOCKED ^ REQUEST ^</srai>
+        </template>
+    </category>
+    
+    <!--Freeze studies -->
     <category>
         <pattern>^ FREEZE ^ STUDIES ^</pattern>
         <template>In the event that a leave of absence is needed, the student shall apply to the 
@@ -32,4 +198,52 @@
         <template><srai>^ FREEZE ^ STUDIES ^</srai></template>
     </category>
     
+    <!--Deregister -->
+    <category>
+        <pattern>^ DEREGISTER ^</pattern>
+        <template>
+        Students wishing to leave the University at their own discretion shall apply in writing to the Registrar’s 
+        Office by completing the relevant request, which is provided by the Registrar’s Office. <br></br>
+        Upon request by the student, all documents demonstrating academic status and diplomas 
+        and other ones that are submitted when registering shall 
+        be given back to the student by the RO. Tuition fees paid until then are non-refundable.       
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DEREGISTRATION ^</pattern>
+        <template>
+            <srai>^ DEREGISTER ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DOCUMENTS ^ BACK ^ DEREGISTRATION ^</pattern>
+        <template>
+            All documents demonstrating academic status and diplomas and other ones 
+            that are submitted when registering shall be given back to the student
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ DEREGISTRATION ^ DOCUMENTS ^ BACK ^</pattern>
+        <template>
+            <srai>^ DOCUMENTS ^ BACK ^ DEREGISTRATION ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ BACK ^ DEREGISTRATION ^</pattern>
+        <template>
+            <srai>^ DOCUMENTS ^ BACK ^ DEREGISTRATION ^</srai>
+        </template>
+    </category>
+    
+    <!-- refund -->
+    <category>
+        <pattern>^ REFUND ^</pattern>
+        <template>
+            For detailed information on refunds contact the Registrar’s Office.
+        </template>
+    </category>
 </aiml>
